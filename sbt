@@ -39,11 +39,6 @@ if [ "${jarmd5}" != "${sbtsum}" ]; then
 	fi
 fi
 
-if [ $# -eq 0 ]; then
-	echo "no sbt command given"
-	exit 1
-fi
-
 case $1 in
 	prod*)
 		echo "Prod-Mode"
